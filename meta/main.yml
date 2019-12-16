@@ -2,6 +2,7 @@
 
 dependencies:
   - role: julienpalard.nginx_letsencrypt
+    version: master
     vars:
       certificates: ["{{ [domain] | union(extra_certificates) }}"]
 
